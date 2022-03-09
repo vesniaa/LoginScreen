@@ -36,6 +36,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
+                                            <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSx-hv-kKQ"/>
                                             <segue destination="bwH-eu-OsA" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="JvD-DK-MPZ"/>
                                         </connections>
                                     </button>
@@ -47,12 +48,18 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="forgotUserNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFV-Vr-qjL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-yj-49j">
                                                 <rect key="frame" x="171" y="0.0" width="123" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="C7e-vJ-8i7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -68,6 +75,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ta-hG-Lxs"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Sbo-o3-ffW" id="RRD-b1-EEf"/>
+                        <outlet property="userTextField" destination="8JB-b8-Jpp" id="ElK-Ix-B0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
