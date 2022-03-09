@@ -12,14 +12,16 @@ class MainViewController: UIViewController {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    private let user = User.getUserData()
+    private let user = "Eugenia"
+    private let password = "Password"
+
     
     @IBAction func forgotUserNameButtonPressed(_ sender: Any) {
-        showAlert(title: "OOPS", message: "Your name is \(user.username)")
+        showAlert(title: "Oops!", message: "Your name is \(user)")
     }
     
     @IBAction func forgotPasswordButtonPressed(_ sender: Any) {
-        showAlert(title: "OOPS", message: "Your password is \(user.password)")
+        showAlert(title: "Oops!", message: "Your password is \(password)")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,12 +32,10 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed() {
-        if loginTextField.text != user.username || passwordTextField.text != user.password {
-            showAlert(
-        title: "Invalid login or password",
-        message: "Please, enter correct login and password")
-            passwordTextField.text = ""
+        if loginTextField.text != user || passwordTextField.text != password {
+            showAlert(title: "Error", message: "Check your name and password")
         }
+        return
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
