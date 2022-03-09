@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginButtonPressed() {
         if userTextField.text != trueUserName || passwordTextField.text != truePassword {
-            let alert = UIAlertController(title: "Invalid login or password", message: "Please, enter correct login and password", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Invalid login or password", message: "Please, enter correct login or password", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default) { _ in
                 self.userTextField.text = ""
                 self.passwordTextField.text = ""
