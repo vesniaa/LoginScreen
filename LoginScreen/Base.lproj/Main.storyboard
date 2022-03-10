@@ -64,14 +64,28 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sbo-o3-ffW" firstAttribute="trailing" secondItem="SIG-yj-49j" secondAttribute="trailing" id="Ku5-Y0-eEZ"/>
+                                    <constraint firstItem="Sbo-o3-ffW" firstAttribute="leading" secondItem="ld1-ZI-3LF" secondAttribute="leading" id="WYb-WC-eT4"/>
+                                    <constraint firstItem="Sbo-o3-ffW" firstAttribute="top" secondItem="8JB-b8-Jpp" secondAttribute="bottom" constant="24" id="oQ8-cI-lop"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xjH-E4-wqV" secondAttribute="trailing" constant="60" id="28k-6z-ZnQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JCR-m6-RtH" secondAttribute="trailing" constant="60" id="7Fz-nW-y33"/>
+                            <constraint firstItem="JCR-m6-RtH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="FAQ-04-k2l"/>
+                            <constraint firstItem="8JB-b8-Jpp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Hax-GR-5kg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8JB-b8-Jpp" secondAttribute="trailing" constant="60" id="dwh-Hu-WHc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sbo-o3-ffW" secondAttribute="trailing" constant="60" id="eLF-8J-NlA"/>
+                            <constraint firstItem="8JB-b8-Jpp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="eg4-0N-Ubj"/>
+                            <constraint firstItem="Sbo-o3-ffW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="emM-3E-V75"/>
                             <constraint firstItem="xjH-E4-wqV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="i5R-Nd-ub2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JCR-m6-RtH" secondAttribute="bottom" constant="464" id="ifi-x5-HmO"/>
                             <constraint firstItem="xjH-E4-wqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="udg-jf-gvm"/>
+                            <constraint firstItem="JCR-m6-RtH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="306" id="zhl-Va-w3G"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ta-hG-Lxs"/>
